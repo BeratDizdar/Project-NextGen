@@ -27,6 +27,9 @@
       span{
         color:#FFD700;
       }
+      #felaket{
+        color:#FF0000;
+      }
       dt{
         color:#539313
       }
@@ -51,10 +54,16 @@
           <li><a href="#oyun-sistemi">Oyun Sistemi</a></li>
             <ul>
               <li><a href="#karakter-oluşturma">Karakter Oluşturma</a></li>
+                <ul>
+                  <li><a href="#dikkat">Dikkat Edilmesi Gerekenler</a></li>
+                  <li><a href="#felaketler">Felaketler</a></li>
+                  <li><a href="#çarpıcı-özellikler">Çarpıcı Özellikler</a></li>
+                </ul>
               <li><a href="#seviye-olayı">Seviye Olayı</a></li>
               <li><a href="#zorluk-belirleme">Zorluk Belirleme</a></li>
               <li><a href="#senaryo-oluşturma">Senaryo Oluşturma</a></li>
             </ul>
+          <li><a href="#zarlar">Zarlar</a></li>
           <li><a href='#hakkımızda'>Hakkımızda</a></li>
         </ul>
         </nav>
@@ -74,7 +83,7 @@
           </ul>
           Bütün ayarlar yapıldıktan sonra kurallar bölümünü okuyabilirsiniz.
         </p>
-        
+        <blockquote>
         <!--KARAKTER OLUŞTURMA-->
         <h3 id="karakter-oluşturma">Karakter Oluşturma</h3>
         <p>Karakter oluşturmak gayet basit birkaç adımdan oluşmaktadır. 
@@ -86,18 +95,37 @@
           <li>Geçmişi (Senaryoya Bağlı)</li>
           <li>Karakter İlişkileri</li>
         </ol>
-          <br><span>[Dikkat Edilmesi Gerekenler]:</span> Fiziksel ve kişisel özellikler
-              oluşturulurken senaryo dışına çıkılmaması gerekiyor. Ayrıca oyun içerisinde
-              seviye atlamak demek bir adet <span><i>mucize</i></span> elde etmek 
-              anlamına geliyor. <span><i>Mucize</i></span> oyun kurucusunun önemli
-              anlarda inisiyatif kullanıp oyuncuyu kurtarmasını sağlar. Tabi ki bu 
-              yüzden seviye kazanılması biraz zor.
-          <br><span>[Çarpıcı özellikler]:</span> Her oyunun başında belirlenmesi gereken 
-              özelliklerdir. Diğer özelliklerden farkı oyunda bariz fark 
-              yaratabilecek özellikler olmalarıdır. Seçimi zorunlu değildir. En fazla
-              2 tane seçilebilir.<br>
+
+          <!--DİKKAT EDİLMESİ GEREKENLER-->
+          <br><span id="dikkat">[Dikkat Edilmesi Gerekenler]:</span> Fiziksel ve kişisel özellikler
+              oluşturulurken senaryo dışına çıkılmaması gerekiyor.<br>
+      
+          <!--FELAKETLER-->
+          <br><span id="felaketler">[Felaketler]:</span>
+              Ayrıca oyun içerisinde seviye atlamak demek bir adet <span id="felaket"><i>felaket</i></span> 
+              elde etmek anlamına geliyor. <span id="felaket"><i>Felaketler</i></span> seviye arttıkça biriken ve
+              oyuncunun veya oyuncuların oyunun sonuna varamamasını sağlayan bir mekaniktir. Bu hem oyuncuları,
+              roleplay yaparken daha dikkatli olmalarını hem de daha eğlenceli anlar yaşanabilmesini
+              sağlıyor. Ama <span id="felaket"><i>felaketleri</i></span> tetikleyecek şeylerin dikkatli 
+              ayarlanması gerekiyor. Oyuncuların anında <span id="felaket"><i>felaket</i></span>
+              yaşamaması için, oyunu yöneten kişi seviye atlama mekaniği ile 
+              <span id="felaket"><i>felaketleri</i></span> dengelemesi lazım. <span>Örnek olarak:</span><br>
+              <blockquote>
+              Diyelimki oyun kurucu, <span id="felaket"><i>felaketin</i></span> 10. seviyeye geldiğinde 
+              gerçekleşeceğini söyledi. Karşılık olarak her oyuncunun kazandığı bir tecrübe puanının 
+              grubun ortak <span id="felaket"><i>felaket</i></span> seviyesini yükselteceğini de belirtti.
+              Son olarak da tecrübe puanlarını kazanma şekillerinden de bahsedince aslında bu kısım bitmiş oluyor.
+              </blockquote>
+              
+              Yani anlaşılacağı üzere bu oyunda seviye atlamak çok istenilen bir şey değil. Ama heyecan
+              meraklıları veya oyuna aksiyon katmak isteyen oyun kurucular için birebir bir mekanik.<br>
 
           <!--ÇARPICI ÖZELLİKLER-->
+          <br><span id="çarpıcı-özellikler">[Çarpıcı özellikler]:</span> Her oyunun başında belirlenmesi gereken özelliklerdir. 
+              Diğer özelliklerden farkı oyunda bariz fark yaratabilecek özellikler olmalarıdır. 
+              Seçimi zorunlu değildir. En fazla 2 tane seçilebilir.<br>
+
+          <!--ÇARPICI ÖZELLİKLER LİSTESİ-->
           <span>Çarpıcı Özellik Listesi:</span>
           <dl>
             <dt>Akıllı Bıdık:</dt>
@@ -125,12 +153,14 @@
         <!--SEVİYE OLAYI-->
         <h3 id="seviye-olayı">Seviye Olayı</h3>
         <p>Seviye kazanmak senaryodan senaryoya değişebilir ve genel olarak
-          oyun kurucuya aittir. Yine de bu konuda kararsız iseniz, size seviye konusunda 
-          temel mekaniği açıklayabilirim.<br>
-          <span>Seviye 1 - 4 arası için 200xp,</span><br>
-          <span>Seviye 4 - 10 arası için 500xp</span> gerekmektedir.<br>
-          Tabi seviye atlamanın zor olduğu bir oyunda tecrübe kazanabileceğiniz
-          bazı olaylar şunlardır:<br><i>Dövüş kazanma, başarılı bir konuşma
+          oyun kurucuya aittir. Yine de bu konuda kararsız iseniz, size birkaç tavsiye 
+          verebilirim. <span id="felaket"><i>Felaket</i></span> seviyesini olduğu bu
+          oyun sisteminde seviye kazanmak kritik bir önem teşkil ediyor.<br>
+          Mesela, oyuncular bir düşman alt ettiğinde, kötü bir şeyler yaptığında, 
+          suç işlediğinde <span id="felaket"><i>felaket</i></span> seviyeleri artmalı.<br>
+          İyilik yaptığında, görev tamamladığında, gerçekçi bir roleplay yaptıklarında
+          <span id="felaket"><i>felaket</i></span> seviyeleri azalmalı.
+          <i>Dövüş kazanma, başarılı bir konuşma
           gerçekleştirme, gerçekçi bir roleplay yapmak.</i>
           <br>
         </p>
@@ -138,16 +168,16 @@
         <!--ZORLUK BELİRLEME-->
         <h3 id="zorluk-belirleme">Zorluk Belirleme</h3>
         <p>Zorluk belirleme kuralları da senaryodan senaryoya göre değişebilir
-          ve genel olarak oyun kurucuya aittir. Hem ayrıca zorluk eklemek, oyunu 
-          daha eğlenceli hale getirmez mi? <br>
+          ve genel olarak oyun kurucuya aittir.<br>
           Ancak özellikle oyun kurucuların dikkat etmesi gereken bir durum var.
           Zorluk dereceleri oyuncuları ödüllendirmeli. Yoksa seçmenin bir anlamı 
           kalmaz. Örnek olarak:<br>
-          <span><i>Eğer oyun kurucu "kolay, orta, zor" olarak 3 tane zorluk belirlediyse
-            kolay olanda seviye atlamak daha zorken,
-            zor olanda seviye atlamak daha kolay olmalı.</i></span>
+          <span><i>Eğer oyun kurucu "kolay, zor" olarak 2 tane zorluk belirlediyse
+            kolay olanda <span id="felaket"><i>felaket</i></span> yaşamak daha kolayken,
+            zor olanda <span id="felaket"><i>felaket</i></span> yaşamak daha zor olmalı.</i></span>
           <br><br>
-          <span>[Olası bir soru]:</span> Peki mesela zorluk seviyesi tam olarak neleri zorlaştırmalı?
+          <span>[Olası bir soru]:</span> Peki mesela zorluk seviyesi oyun içinde tam olarak neleri 
+          zorlaştırmalı?
           <br> Zorluk seviyesi, karşılaştırdığınız bir ortamdaki düşman sayısını veya bu düşmanların
           hasarını temsil edebilir. Ya da bu zorluk seviyesi daha basit bir şekilde, karakterinizin o 
           an içerisindeki tuvalet ihtiyacının artması da olabilir. Gayet ucu açık bir seçenektir.
@@ -156,20 +186,18 @@
 
         <!--SENARYO OLUŞTURMA-->
         <h3 id="senaryo-oluşturma">Senaryo Oluşturma</h3>
-        <p>Daha bir şey yazmadım :P</p>
+        <p>Senaryo oluşturma esasen tamamen sen ve arkadaşlarına bağlı bir adım fakat burada
+          sadece dikkat etmen gereken bazı durumlar olmalı.
+          <li type="I">Felaket sistemine uygun olması</li>
+          <li type="I">Çarpıcı özelliklerle tutarlı olması</li>
+          <li type="I">Karakter geçmişlerinin senaryo ile tutarlı olması</li>
+          <li type="I">Karakter ilişkileri ile tutarlı olmalı</li>
+        </p>
+      </blockquote>
       <hr>
 
-      <!--KURALLAR-->
-      <h2 id="kurallar">Kurallar</h2>
-
-      <hr>
-
-      <!--TERMİNAL-->
-      <h2 id="terminal" style="padding-bottom: 10px;">Terminal</h2>
-      <p>Arkadaşların ile konuşup bir yandan oynamak istiyorsan 
-        <a href="terminal.html">Terminal</a> tam sana göre.
-      </p>
-      
+      <!--Zarlar-->
+      <h2 id="zarlar">Zarlar</h2>
       <hr>
 
       <!--HAKKIMIZDA-->
