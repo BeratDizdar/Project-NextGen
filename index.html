@@ -7,35 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
-      body{
-        background-color: #000000; 
-        color: #00FFFF; 
-        font-family: 'Roboto Mono', monospace; 
+      body {
+        background-color: #000000;
+        color: #00FFFF;
+        font-family: 'Roboto Mono', monospace;
+        max-width: 80%;
+        margin: 0 auto; /* Sayfayı ortala */
       }
-      h1{
+
+      h1 {
         color: #FFD700;
         text-align: center;
       }
-      h2, h3, h4{
+
+      h2, h3, h4 {
         margin-bottom: -10px;
         color: #FF1493;
       }
-      nav a, hr, nav ul{
+
+      nav a, hr, nav ul {
+        text-align: justify;
         color: #C0C0C0;
         border-color: #FFD700;
       }
-      span{
-        color:#FFD700;
+
+      span {
+        color: #FFD700;
       }
-      #felaket{
-        color:#FF0000;
+
+      #felaket {
+        color: #FF0000;
       }
-      dt{
-        color:#539313
+
+      dt {
+        color: #539313;
       }
-      dd{
+
+      dd {
         color: #00FF00;
       }
+
+      article {
+        margin-top: 20px;
+      }
+
+      dl {
+        margin-top: 10px;
+      }
+
+      /* Çarpıcı Özellikler Listesi Stilleri */
+      dt {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      dd {
+        margin-bottom: 10px;
+      }
+
+      /* Footer Stilleri */
+      footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      /* Header ve Footer Arasındaki Boşluk */
+      section {
+        margin-bottom: 20px;
+      }
+
     </style>
   </head>
   <body>
@@ -47,7 +87,8 @@
 
     <!--HERŞEYİN BAŞLADIĞI YER-->
     <section>
-      <p>[NextGen RPG] - İki kişilik oynanılabilir bir RPG sistemidir.</p>
+      <p>[NextGen RPG] - Arkadaşlarınız ile oynayabileceğiniz, rahat ve eğlenceli
+      bir RPG sistemidir.</p>
       <h4>İçindekiler</h4>
       <nav>
         <ul>
@@ -62,8 +103,8 @@
               <li><a href="#seviye-olayı">Seviye Olayı</a></li>
               <li><a href="#zorluk-belirleme">Zorluk Belirleme</a></li>
               <li><a href="#senaryo-oluşturma">Senaryo Oluşturma</a></li>
+              <li><a href="#zarlar">Zarlar</a></li>
             </ul>
-          <li><a href="#zarlar">Zarlar</a></li>
           <li><a href='#hakkımızda'>Hakkımızda</a></li>
         </ul>
         </nav>
@@ -97,8 +138,18 @@
         </ol>
 
           <!--DİKKAT EDİLMESİ GEREKENLER-->
-          <br><span id="dikkat">[Dikkat Edilmesi Gerekenler]:</span> Fiziksel ve kişisel özellikler
-              oluşturulurken senaryo dışına çıkılmaması gerekiyor.<br>
+          <br><span id="dikkat">[Dikkat Edilmesi Gerekenler]:</span> Kötü rol yapmak ortak 
+            <span id="felaket"><i>felaket</i></span> seviyesini biraz arttırırken, başarılı rol yapmak
+            ortak <span id="felaket"><i>felaket</i></span> seviyesini biraz düşürür.<br> 
+            Bir oyuncunun ölmesi <span id="felaket"><i>felaketi</i></span> direkt 1 seviye yükseltir.<br>
+            Bunun ile birlikte eğer <span id="felaket"><i>felaket</i></span> seviyesi bir yükselirse,
+            o seviyeden daha alt bir seviyeye inemez.<br>
+            <span style="color:darkorange;">Mesela 5,6'dan 5,1'e düşebilir ama 5,0'dan 4,9'a düşemez.
+            </span><br>
+            <br>Oyun kurucu, oyunu dengelemek adına senaryoya başlamadan önce oyuncuların 
+            karakter kağıdına ekleme yapabilir. Fakat bu oyun içinde düzelemeyecek bir ekleme değildir.
+            <br>Ayrıca zorunlu olmamakla ve ortak bir karara bağlı olmakla birlikte başlangıçta 
+            karakterlerin canları 10 olabilir.<br>
       
           <!--FELAKETLER-->
           <br><span id="felaketler">[Felaketler]:</span>
@@ -193,10 +244,16 @@
           <li type="I">Karakter geçmişlerinin senaryo ile tutarlı olması</li>
           <li type="I">Karakter ilişkileri ile tutarlı olmalı</li>
         </p>
-      <hr>
 
-      <!--Zarlar-->
-      <h2 id="zarlar">Zarlar</h2>
+        <!--Zarlar-->
+        <h3 id="zarlar">Zarlar</h3>
+        <p>Oyunu oynamak için 3 adet zar bulunur:<span> d4, d10, d20</span><br>
+        Önerilen kullanma şekli: <br>
+        d4'ü dövüş vakitlerinde kullanmak için,<br>
+        d10'u bir olayda ölmekten kurtulmak için,<br>
+        d20 ise genel oyun zarı olarak kullanılmalıdır.
+        </p>
+      
       <hr>
 
       <!--HAKKIMIZDA-->
