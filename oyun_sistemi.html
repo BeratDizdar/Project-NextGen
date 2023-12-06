@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project NextGen</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Berat Dizdar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!--HEADER KISMI-->
+    <header>
+        <h1 class="ortala">Project NextGen</h1>
+        <nav id="start-button" class="ortala">
+            <a href="main.html">AnaSayfa</a>
+            <a href="oyun_sistemi.html">Oyun Sistemi</a>
+            <a href="senaryo.html">Senaryolar</a>
+            <a href="hakkımızda.html">Hakkımızda</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!--HERŞEYİN BAŞLADIĞI YER-->
+
+    <section>
+
+        <div id="menu-icon"><h4>&#9776 İçindekiler</h4></div>
+        <nav id="contents-menu">
+            <ul>
+                <li><a href="#oyun-sistemi">Oyun Sistemi</a></li>
+                <ul>
+                    <li><a href="#karakter-oluşturma">Karakter Oluşturma</a></li>
+                    <ul>
+                        <li><a href="#dikkat">Dikkat Edilmesi Gerekenler</a></li>
+                        <li><a href="#felaketler">Felaketler</a></li>
+                        <li><a href="#çarpıcı-özellikler">Çarpıcı Özellikler</a></li>
+                    </ul>
+                    <li><a href="#seviye-olayı">Seviye Olayı</a></li>
+                    <li><a href="#zorluk-belirleme">Zorluk Belirleme</a></li>
+                    <li><a href="#senaryo-oluşturma">Senaryo Oluşturma</a></li>
+                    <li><a href="#zarlar">Zarlar</a></li>
+                </ul>
+                <li><a href='#hakkımızda'>Hakkımızda</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <!--YAZILAR-->
+    <article>
+
+        <!--OYUN SİSTEMİ-->
+        <h2 id="oyun-sistemi">Oyun Sistemi</h2>
+        <p>Her oyunda olduğu gibi bunda da oyuna başlayabilmek için bir takım
+            ayarların yapılması lazım. Bunlar:
+        <ul>
+            <li>Karakter Oluşturma</li>
+            <li>Zorluk Belirleme</li>
+            <li>Senaryo Oluşturma</li>
+        </ul>
+        Bütün ayarlar yapıldıktan sonra kurallar bölümünü okuyabilirsiniz.
+        </p>
+
+        <!--KARAKTER OLUŞTURMA-->
+        <h3 id="karakter-oluşturma">Karakter Oluşturma</h3>
+        <p>Karakter oluşturmak gayet basit birkaç adımdan oluşmaktadır.
+        <ol>
+            <li>Karakter İsmi</li>
+            <li>Fiziksel Özellikler</li>
+            <li>Kişisel Özellikler</li>
+            <li>Çarpıcı Özellikler (Senaryoya Bağlı)</li>
+            <li>Geçmişi (Senaryoya Bağlı)</li>
+            <li>Karakter İlişkileri</li>
+        </ol>
+
+        <!--DİKKAT EDİLMESİ GEREKENLER-->
+        <br><span id="dikkat">[Dikkat Edilmesi Gerekenler]:</span> Kötü rol yapmak ortak
+        <span class="font-effect-fire"><i>felaket</i></span> seviyesini biraz arttırırken, başarılı rol
+        yapmak
+        ortak <span class="font-effect-fire"><i>felaket</i></span> seviyesini biraz düşürür.<br>
+        Bir oyuncunun ölmesi <span class="font-effect-fire"><i>felaketi</i></span> direkt 1 seviye
+        yükseltir.<br>
+        Bunun ile birlikte eğer <span class="font-effect-fire"><i>felaket</i></span> seviyesi bir
+        yükselirse,
+        o seviyeden daha alt bir seviyeye inemez.<br>
+        <span style="color:darkorange;">Mesela 5,6'dan 5,1'e düşebilir ama 5,0'dan 4,9'a düşemez.
+        </span><br>
+        <br>Oyun kurucu, oyunu dengelemek adına senaryoya başlamadan önce oyuncuların
+        karakter kağıdına ekleme yapabilir. Fakat bu oyun içinde düzelemeyecek bir ekleme değildir.
+        <br>Ayrıca zorunlu olmamakla ve ortak bir karara bağlı olmakla birlikte başlangıçta
+        karakterlerin canları 10 olabilir.<br>
+
+        <!--FELAKETLER-->
+        <br><span class="font-effect-fire">[Felaketler]:</span>
+        Ayrıca oyun içerisinde seviye atlamak demek bir adet <span class="font-effect-fire"><i>felaket</i>
+        </span>
+        elde etmek anlamına geliyor. <span class="font-effect-fire"><i>Felaketler</i></span> seviye
+        arttıkça
+        biriken ve
+        oyuncunun veya oyuncuların oyunun sonuna varamamasını sağlayan bir mekaniktir. Bu hem oyuncuları,
+        roleplay yaparken daha dikkatli olmalarını hem de daha eğlenceli anlar yaşanabilmesini
+        sağlıyor. Ama <span class="font-effect-fire"><i>felaketleri</i></span> tetikleyecek şeylerin
+        dikkatli
+        ayarlanması gerekiyor. Oyuncuların anında <span class="font-effect-fire"><i>felaket</i></span>
+        yaşamaması için, oyunu yöneten kişi seviye atlama mekaniği ile
+        <span class="font-effect-fire"><i>felaketleri</i></span> dengelemesi lazım. <span>Örnek
+            olarak:</span><br>
+        <blockquote>
+            Diyelimki oyun kurucu, <span class="font-effect-fire"><i>felaketin</i></span> 10. seviyeye
+            geldiğinde
+            gerçekleşeceğini söyledi. Karşılık olarak her oyuncunun kazandığı bir tecrübe puanının
+            grubun ortak <span class="font-effect-fire"><i>felaket</i></span> seviyesini yükselteceğini de
+            belirtti.
+            Son olarak da tecrübe puanlarını kazanma şekillerinden de bahsedince aslında bu kısım bitmiş oluyor.
+        </blockquote>
+
+        Yani anlaşılacağı üzere bu oyunda seviye atlamak çok istenilen bir şey değil. Ama heyecan
+        meraklıları veya oyuna aksiyon katmak isteyen oyun kurucular için birebir bir mekanik.<br>
+
+        <!--ÇARPICI ÖZELLİKLER-->
+        <br><span id="çarpıcı-özellikler">[Çarpıcı özellikler]:</span> Her oyunun başında belirlenmesi gereken
+        özelliklerdir.
+        Diğer özelliklerden farkı oyunda bariz fark yaratabilecek özellikler olmalarıdır.
+        Seçimi zorunlu değildir. En fazla 2 tane seçilebilir.<br>
+
+        <!--ÇARPICI ÖZELLİKLER LİSTESİ-->
+        <span>Çarpıcı Özellik Listesi:</span>
+        <dl>
+            <dt>Akıllı Bıdık:</dt>
+            <dd>Kazandığı her tecrübe puanı %20 daha fazladır lakin güç
+                isteyen işlerde daha başarısızdır.
+            </dd>
+            <dt>Hızlı Metabolizma:</dt>
+            <dd>Daha hızlı iyileşir ama daha fazla hasar görür.</dd>
+            <dt>Kemikleri İri:</dt>
+            <dd>Daha az hasar görür ve daha yavaş iyileşir.</dd>
+            <dt>Heisenberg:</dt>
+            <dd>Kimyasallar konusunda uzmandır. Ayrıca oldukça açgözlüdür.</dd>
+            <dt>Eli Ağır😎:</dt>
+            <dd>Elin ağır ama çok zeki değilsin.</dd>
+            <dt>Samimi:</dt>
+            <dd>Konuşma konusunda becerikli ama osuruyor.</dd>
+            <dt>Yakışıklı:</dt>
+            <dd>Kadınlar onu sever ama erkekler sevmez</dd>
+            <dt>Dili Kuvvetli(mi)</dt>
+            <dd>Her dili konuşabiliyor. Ama bazen saçmalıyor.</dd>
+        </dl>
+
+        </p>
+
+        <!--SEVİYE OLAYI-->
+        <h3 id="seviye-olayı">Seviye Olayı</h3>
+        <p>Seviye kazanmak senaryodan senaryoya değişebilir ve genel olarak
+            oyun kurucuya aittir. Yine de bu konuda kararsız iseniz, size birkaç tavsiye
+            verebilirim. <span class="font-effect-fire"><i>Felaket</i></span> seviyesini olduğu bu
+            oyun sisteminde seviye kazanmak kritik bir önem teşkil ediyor.<br>
+            Mesela, oyuncular bir düşman alt ettiğinde, kötü bir şeyler yaptığında,
+            suç işlediğinde <span class="font-effect-fire"><i>felaket</i></span> seviyeleri artmalı.<br>
+            İyilik yaptığında, görev tamamladığında, gerçekçi bir roleplay yaptıklarında
+            <span class="font-effect-fire"><i>felaket</i></span> seviyeleri azalmalı.
+            <i>Dövüş kazanma, başarılı bir konuşma
+                gerçekleştirme, gerçekçi bir roleplay yapmak.</i>
+            <br>
+        </p>
+
+        <!--ZORLUK BELİRLEME-->
+        <h3 id="zorluk-belirleme">Zorluk Belirleme</h3>
+        <p>Zorluk belirleme kuralları da senaryodan senaryoya göre değişebilir
+            ve genel olarak oyun kurucuya aittir.<br>
+            Ancak özellikle oyun kurucuların dikkat etmesi gereken bir durum var.
+            Zorluk dereceleri oyuncuları ödüllendirmeli. Yoksa seçmenin bir anlamı
+            kalmaz. Örnek olarak:<br>
+            <span><i>Eğer oyun kurucu "kolay, zor" olarak 2 tane zorluk belirlediyse
+                    kolay olanda <span class="font-effect-fire"><i>felaket</i></span> yaşamak daha
+                    kolayken,
+                    zor olanda <span class="font-effect-fire"><i>felaket</i></span> yaşamak daha zor
+                    olmalı.</i></span>
+            <br><br>
+            <span>[Olası bir soru]:</span> Peki mesela zorluk seviyesi oyun içinde tam olarak neleri
+            zorlaştırmalı?
+            <br> Zorluk seviyesi, karşılaştırdığınız bir ortamdaki düşman sayısını veya bu düşmanların
+            hasarını temsil edebilir. Ya da bu zorluk seviyesi daha basit bir şekilde, karakterinizin o
+            an içerisindeki tuvalet ihtiyacının artması da olabilir. Gayet ucu açık bir seçenektir.
+            Zaten zorluğun genel amacı oyunun daha eğlenceli ve yaratıcı olmasıdır.
+        </p>
+
+        <!--SENARYO OLUŞTURMA-->
+        <h3 id="senaryo-oluşturma">Senaryo Oluşturma</h3>
+        <p>Senaryo oluşturma esasen tamamen sen ve arkadaşlarına bağlı bir adım fakat burada
+            sadece dikkat etmen gereken bazı durumlar olmalı.
+            <li type="I">Felaket sistemine uygun olması</li>
+            <li type="I">Çarpıcı özelliklerle tutarlı olması</li>
+            <li type="I">Karakter geçmişlerinin senaryo ile tutarlı olması</li>
+            <li type="I">Karakter ilişkileri ile tutarlı olmalı</li>
+        </p>
+
+        <!--Zarlar-->
+        <h3 id="zarlar">Zarlar</h3>
+        <p>Oyunu oynamak için 3 adet zar bulunur:<span> d4, d10, d20</span><br>
+            Önerilen kullanma şekli: <br>
+            d4'ü dövüş vakitlerinde kullanmak için,<br>
+            d10'u bir olayda ölmekten kurtulmak için,<br>
+            d20 ise genel oyun zarı olarak kullanılmalıdır.
+        </p>
+
+    </article>
+
+    <!--FOOTER KISMI-->
+    <footer>
+        <h6>Karabük Korsanları</h6>
+    </footer>
+
+    <script>
+        window.onload = function () {
+            const menuIcon = document.getElementById("menu-icon");
+            const contentsMenu = document.getElementById("contents-menu");
+            contentsMenu.style.display = 'none';
+            menuIcon.addEventListener("click", function () {
+                if (contentsMenu.style.display === 'none') {
+                    contentsMenu.style.display = 'block';
+                } else {
+                    contentsMenu.style.display = 'none';
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>

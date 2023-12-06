@@ -1,0 +1,50 @@
+a {
+    color:antiquewhite;
+}
+
+#yay{
+    max-width: 10px;
+}
+
+.senaryo-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.senaryo-baslik {
+    cursor: pointer;
+    padding: 10px 10px;
+    margin: 10px 50px;
+    border-radius: 20px;
+    border-top: 6px solid #FF1493;
+    border-left: 6px solid #FF1493;
+}
+
+.senaryo-icerik {
+    padding: 10px;
+    margin: 10px 100px;
+    display: none;
+    border-radius: 20px;
+    border-right: 6px solid #FF1493;
+    border-bottom: 6px solid #FF1493;
+}
+
+@media screen and (max-width: 767px) {
+    .senaryo-baslik {
+        max-width: 300px;
+    }
+
+    .senaryo-icerik {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .senaryo-baslik {
+        max-width: 300px;
+    }
+
+    .senaryo-icerik {
+        max-width: 400px;
+    }
+}

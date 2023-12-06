@@ -1,0 +1,70 @@
+body {
+    background-color: #000000;
+    color: #00FFFF;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.ortala {
+    color: #FFD700;
+    text-align: center;
+}
+
+#start-button a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #C0C0C0;
+    border: 2px solid #C0C0C0;
+    border-radius: 5px;
+}
+
+h2,
+h3,
+h4 {
+    margin-bottom: -10px;
+    color: #FF1493;
+}
+
+nav a,
+nav ul {
+    color: #C0C0C0;
+}
+
+hr {
+    border-color: #FFD700;
+}
+
+span {
+    color: #FFD700;
+}
+
+#menu-icon {
+    cursor: pointer;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #539313;
+}
+
+dd {
+    color: #00FF00;
+    margin-bottom: 10px;
+}
+
+article {
+    margin-top: 20px;
+}
+
+dl {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}

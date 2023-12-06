@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project NextGen</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Berat Dizdar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="senaryo.css">
+</head>
+
+<body class="senaryo-body">
+
+    <!--HEADER KISMI-->
+    <header>
+        <h1 class="ortala">Project NextGen</h1>
+        <nav id="start-button" class="ortala">
+            <a href="main.html">AnaSayfa</a>
+            <a href="oyun_sistemi.html">Oyun Sistemi</a>
+            <a href="senaryo.html">Senaryolar</a>
+            <a href="hakkımızda.html">Hakkımızda</a>
+        </nav>
+        <hr>
+    </header>
+
+
+    <div class="senaryo-baslik" onclick="toggleSenaryo('senaryo1')"><div id="#yay">Senaryo KAKA</div></div>
+    <div id="senaryo1" class="senaryo-icerik">
+    Senaryoyu indirmek için <a href="senaryolar/kaka_indirdin.pdf" download>buraya</a> tıklayınız.
+    </div>
+    <div class="senaryo-baslik" onclick="toggleSenaryo('senaryo2')">Senaryo Başka KAKA</div>
+    <div id="senaryo2" class="senaryo-icerik">
+    Senaryoyu indirmek için <a href="senaryolar/kaka_indirdin.pdf" download>buraya</a> tıklayınız.
+    </div>
+
+
+    <!--FOOTER KISMI-->
+    <footer>
+        <h6>Karabük Korsanları</h6>
+    </footer>
+
+    <script>
+        function toggleSenaryo(senaryoId) {
+    var icerikElementi = document.getElementById(senaryoId);
+
+    // Senaryo içeriğini görüntüle veya gizle
+    if (icerikElementi.style.display === 'none' || !icerikElementi.style.display) {
+        icerikElementi.style.display = 'block';
+    } else {
+        icerikElementi.style.display = 'none';
+    }};
+    </script>
+</body>
+
+</html>
